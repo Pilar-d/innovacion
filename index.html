@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoTech-solution</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <!--enlace del framework de bootstrap para que funcione con js y mostrar los enlaces -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+<!--Navbar con bootstrap mustra los enlaces de la pagina cuanta con logo y titulo de la empresa-->
+    <nav class="navbar  navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#hero-carousel"><img src="/imagenes/logo.png" width="100" height="70" alt="" style="padding-right: 10px; border-radius: 50%;">EcoTech SoluTion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContenido">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bg-dark">                
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotro">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--carousel con bootstrap informacion y imagenes sobre la empresa startup-->
+    <section>
+        <div id="hero-carousel" class="carousel slide c-banner">
+            <div class="carousel-inner  ">
+                <div class="carousel-item active c-item">
+                    <img src="../imagenes/imagenportada.jpg" class="d-block w-100 h-100 c-img" alt="slide 1">
+                    <div class="carousel-caption  c-text">
+                        <h1>EcoTech</h1>
+                        <p>Empresa de tecnologias de la información, especializada en desarrollo de aplicaciones web y moviles</p>
+                        <a href="menu.html" class="btn btn-primary">Comenzar</a>
+                    </div>
+                </div>
+                <div class="carousel-item c-item ">
+                    <img src="../imagenes/imagenportada.jpg" class="d-block w-100 c-img" alt="slide 2">
+                    <div class="carousel-caption  c-text">
+                        <h1>Creamos aplicaciones con tecnología de punta</h1>
+                        <p>Desde la idea hasta el despliegue, desarrollamos aplicaciones web y móviles funcionales, seguras y escalables para potenciar tu negocio.</p>
+                        <a href="#" class="btn btn-primary">Únete</a>
+                    </div>
+                </div>
+                <div class="carousel-item c-item ">
+                    <img src="../imagenes/imagenportada.jpg" class="d-block w-100 c-img" alt="slide3">
+                    <div class="carousel-caption  c-text">
+                        <h1>Impulsamos el éxito de nuestros clientes</h1>
+                        <p>Nuestras soluciones digitales generan resultados reales: más eficiencia, mejor experiencia para tus usuarios y crecimiento tangible para tu empresa.</p>
+                        <a href="#" class="btn btn-primary">Comenzar</a>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </section>
+<!--card img y grid con bootstrap mostrar la info principal de la empresa -->
+    <div  class="container text-center">
+        <div class="row">
+            <div class="col">
+                <!--targeta 1-->
+                <div class="card card-intro">
+                    <div class="card-body">
+                        <h4 class="card-title">Construimos el futuro digital de tu empresa</h4>
+                        <hr>
+                        <p class="card-text">En EcoTech, diseñamos y desarrollamos soluciones digitales personalizadas que se adaptan a tus necesidades. Aplicaciones rápidas, seguras y con excelente experiencia de usuario.
+                        </p>
+                    </div>
+                    <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740" class="img-card" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <!--targeta 2-->
+                <div class="card card-intro">
+                    <div class="card-body">
+                        <h4 class="card-title">De la idea al lanzamiento: tu app, nuestra misión</h4>
+                        <hr>
+                        <p class="card-text">
+                            Nos especializamos en el desarrollo de aplicaciones móviles y web que marcan la diferencia. Acompañamos a tu empresa en cada paso del proceso, desde el diseño hasta la implementación.
+                        </p>
+                    </div>
+                    <img src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169854.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740" class="img-card" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--seccion de servicios en bootstrap card-->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <!--card servicios en bootstrap-->
+                <div class="card card-serv" style="width: 18rem;">
+                    <img src="https://img.freepik.com/free-photo/html-css-collage-concept_23-2150061955.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740" class="card-img-top card-img-serv" alt="">
+                    <div class="card-body">
+                        <h2>Desarrollo Web</h2>
+                        <hr>
+                        <p>sitios y sistemas Web modernos,
+                            rapidos y seguro.
+                        </p>
+                        <a href="#" class="btn btn-primary">Únete</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <!--card servicios en bootstrap-->
+                <div class="card card-serv" style="width: 18rem;">
+                    <img src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169865.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740" class="card-img-top card-img-serv" alt="">
+                    <div class="card-body">
+                        <h2>Apliaciones Mobiles</h2>
+                        <hr>
+                        <p>Apps iOS y Android
+                            nativas u/o hibridas.
+                        </p>
+                        <a href="#" class="btn btn-primary">Únete</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <!--card servicios en bootstrap-->
+                <div class="card card-serv" style="width: 18rem;">
+                    <img src="https://img.freepik.com/free-photo/business-team-discussing-information-touchpad_1262-2228.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740" class="card-img-top card-img-serv" alt="">
+                    <div class="card-body">
+                        <h2>Consultoria</h2>
+                        <hr>
+                        <p>Te Guiamos en Tu Transformacion Digital.
+                        </p>
+                        <a href="#" class="btn btn-primary">Únete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--alert de info sobre la empresa con bootstrap-->
+    <section id="nosotro">
+        <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">¿Quienes Somos?</h4>
+            <p>Somos un equipo joven, creativo y apasionado por la tecnología. Creemos que cada proyecto es una oportunidad para innovar y aportar valor real a nuestros clientes..</p>
+            <hr>
+            <p class="mb-0">Que estas esperando unete a nosotros, para que empieces tu proyecto lo antes posible Haz Click!
+                en el boton para registrate</p>
+            <a href="#" class="btn btn-primary btn-alert">Registrarse</a>
+        </div>
+    </section>
+<!--Pie de pagina enlaces de redes sociales mas iconos y logo-->
+    <footer>
+        <div class="icono-social">
+            <ul id ="iconos">
+            <ul class="redes-sociales">
+                <li><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="icono-red"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icono-red"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="icono-red"></li>
+            </ul>
+
+            </ul>
+            <p>© 2025 Startup-ECotech - Todos los derechos reservados a Cristobal Barriga.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
