@@ -1,0 +1,261 @@
+        body , html{
+            text-align: center;
+    
+            
+            height: 100%;
+            margin: 0;
+            background-color:#6e5606;
+            font-family:"Concert One",sans-serif ;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .btn{
+            border: none;
+            margin: 10px;
+            background-color: #ac8811;
+            color: #000000dc;
+            border: none;
+            box-shadow:  0 0 3cap#000000;
+        }
+        .btn:hover{
+            border: 2px solid #ac8811;
+            background-color: #050504e3;
+            color: #ac8811 ;
+        }
+
+        .navbar-toggler:hover{
+            transition: 0.5s;
+            background-color: #d4a71044;
+
+        }
+        footer{
+            box-shadow: 0 0 20px #00000075;
+            margin-top:10px ;
+            padding: 20px 4px;
+            width: 100%;
+            background-color: #ac8811;
+            justify-content: center;
+            align-items:center ;
+        }
+        
+        footer .icono-social ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        footer .icono-social li{
+            list-style: none;
+            padding: 10px;            
+        }
+        p{
+            font-size: small;
+            display: flex;
+            justify-content: center;
+
+        }
+        .Servicio{
+            border-radius: 6%;
+            width: 100%;
+            justify-content: center ;
+            display:flex;
+            flex-direction: row;
+        }
+
+        .vid{
+            border-radius: 4px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 0 10px #353534da;
+            color:#ac8811 ;
+            box-sizing: content-box;
+            border-radius: 5px;
+            transition: 0.5s;
+            width: 100%;
+            background-color: #020201;
+            padding:0;
+            margin: 10px 30px;
+        }
+        .card:hover{
+            border: none;
+            box-sizing: border-box;
+            background-color: #ac8811;
+            box-shadow: 0 0 20px #383837;
+            color:#020201;
+        }
+        
+        .alert{
+            padding: 40px;
+            transition: 0.5s;
+            margin: 30px;
+            background-color: #020201;
+            border: none;
+            color: #ac8811 ;
+            border-radius: 20px;
+        }
+        .alert:hover{
+            box-shadow:0 0 10px #585855d7;
+            color: #020201;
+            background-color: #ac8811 ;
+        }
+        .btn-alert{
+            background-color: #ac8811;
+            color: #000;
+            margin: 20px;
+            justify-items: center;
+        }
+        .btn-alert:hover{
+            background-color: #000;
+            color: #ac8811;
+        }
+        .c-item{
+            height: 440px;
+        }
+        .c-img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .c-text{
+            opacity: 0.9 ;
+            box-sizing: content-box;
+            justify-content: center;
+            margin: 0;
+            box-shadow:0 0 10px #000000;
+            background-color: #131212;
+            border-radius: 30px ;
+        }
+        .c-text h1{
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            padding: 10px;
+            color: #ac8811;
+        }
+        .c-text p{
+            padding: 10px;
+            justify-content: center;
+            font-size: 1.1em;
+            padding: 10px;
+            text-align: center;
+        }
+        .c-banner{
+            box-shadow: 0 0 20px #000000;
+        }
+        .img-card{
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+        }
+        .card-intro{
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .col{
+            width: 100%;
+            min-width: 350px;
+        }
+        .card-serv {
+            transition: 0.5s;
+        }
+        
+        .card-img-serv {
+            transition: 0.5s;
+        }
+        
+        .card-serv:hover {
+            border-radius: 40px;
+        }
+        .card-serv:hover .card-img-serv {
+            border-radius: 40px;
+        }
+
+           body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .plato {
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    .plato img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .plato-info {
+      padding: 10px;
+    }
+    .plato-info h3 {
+      margin: 0;
+    }
+    .plato-info p {
+      font-size: 0.9em;
+      color: #555;
+    }
+    .btn {
+      display: block;
+      margin: 10px auto;
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .carrito {
+      margin-top: 30px;
+    }
+
+    .redes-sociales {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.icono-red {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.icono-red:hover {
+  transform: scale(1.1);
+}
+
+#btnAceptar{
+    background-color: #69ce3a;
+    color: #ffffff;
+}
+
+#btnAceptar:hover{
+    background-color: #28a745 ;
+    color: #ffffff;
+}
+
+#btnCancelar{
+    background-color: #e05555;
+    color: #ffffff;
+}
+
+#btnCancelar:hover{
+    background-color: #d81e18;
+    color: #ffffff;
+}
