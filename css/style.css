@@ -303,3 +303,26 @@
         width: 100% !important;
       }
     }
+
+    @media (max-width: 576px) {
+  .dropdown-menu {
+    width: 100vw !important;
+    left: -75vw !important;
+    right: auto !important;
+    padding: 1rem;
+  }
+
+  .dropdown-item input {
+    width: 50px !important;
+  }
+
+  .dropdown-item img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dropdown-toggle {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
