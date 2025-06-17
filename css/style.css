@@ -1,13 +1,14 @@
-/* ----- Estilos globales ----- */
 body, html {
   text-align: center;
-  height: 100%;
   margin: 0;
   background-color: #6e5606;
   font-family: sans-serif;
-   min-width: 517px; /* no permite que el contenido se achique más */
-  overflow-x: auto; /* permite hacer scroll lateral si la pantalla es más angosta */
+  min-width: 519px;
+  min-height: 100vh;
+  overflow-x: auto;
+  overflow-y: auto; /* Agregado para scroll vertical */
 }
+
 
 /* Versión limpia y responsiva del body */
 body {
