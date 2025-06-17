@@ -230,11 +230,16 @@ footer .icono-social li {
 }
 /* Ajuste para el menú desplegable del carrito en pantallas pequeñas */
 @media (max-width: 576px) {
-  .dropdown-menu-end {
-    left: auto !important;
+  .dropdown-menu.dropdown-menu-end {
     right: 10px !important;
+    left: auto !important;
     transform: translateX(0) !important;
     width: 90vw !important;
-    max-width: 300px;
+    max-width: 320px;
+    min-width: unset !important;
   }
+}
+#dropdownLista {
+  max-height: 300px;
+  overflow-y: auto;
 }
