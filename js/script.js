@@ -200,3 +200,5 @@ function mostrarPopup(mensaje) {
     alerta.remove();
   }, 3000);
 }
+
+

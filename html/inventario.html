@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventario EcoTech</title>
+  <style>
+    /* ----- Estilos globales ----- */
+    body, html {
+      text-align: center;
+      height: 100%;
+      margin: 0;
+      background-color: #6e5606;
+      font-family: sans-serif;
+      min-width: 800px;
+      min-height: 100vh;
+      overflow-x: auto;
+      overflow-y: auto;
+      color: white;
+    }
+
+    .container {
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 1000px;
+      background: #ac8811;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background-color: #fff;
+      color: #000;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #333;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background-color: #6e5606;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4d3e04;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Inventario EcoTech</h1>
+
+    <div>
+      <input type="text" id="producto" placeholder="Nombre del producto">
+      <input type="number" id="cantidad" placeholder="Cantidad" min="1">
+      <button onclick="agregarProducto()">Agregar</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+        </tr>
+      </thead>
+      <tbody id="tablaInventario">
+        <!-- Aquí se agregan productos dinámicamente -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function agregarProducto() {
+      const producto = document.getElementById("producto").value.trim();
+      const cantidad = parseInt(document.getElementById("cantidad").value);
+
+      if (producto && cantidad > 0) {
+        const tabla = document.getElementById("tablaInventario");
+        const fila = document.createElement("tr");
+
+        fila.innerHTML = `
+          <td>${producto}</td>
+          <td>${cantidad}</td>
+        `;
+
+        tabla.appendChild(fila);
+
+        // Limpiar inputs
+        document.getElementById("producto").value = "";
+        document.getElementById("cantidad").value = "";
+      } else {
+        alert("Por favor ingresa un producto y una cantidad válida.");
+      }
+    }
+  </script>
+</body>
+</html>
