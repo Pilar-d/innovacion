@@ -4,7 +4,7 @@ body, html {
   height: 100%;
   margin: 0;
   background-color: #6e5606;
-  font-family: "Concert One", sans-serif;
+  font-family: sans-serif;
    min-width: 550px; /* no permite que el contenido se achique más */
   overflow-x: auto; /* permite hacer scroll lateral si la pantalla es más angosta */
 }
