@@ -70,7 +70,7 @@
         }
         .card {
             border: none;
-            box-shadow: 0 0 10px #353534da;
+            box-shadow: 0 0 10px #f7f7f3da;
             color:#ac8811 ;
             box-sizing: content-box;
             border-radius: 5px;
@@ -128,7 +128,7 @@
             background-color: #131212;
             border-radius: 30px ;
         }
-        .c-text h1{
+        .c-text h2{
             text-align: center;
             font-size: 2.5em;
             margin-bottom: 25px;
