@@ -228,3 +228,13 @@ footer .icono-social li {
 #btnCancelar:hover {
   background-color: #d81e18;
 }
+/* Ajuste para el menú desplegable del carrito en pantallas pequeñas */
+@media (max-width: 576px) {
+  .dropdown-menu-end {
+    left: auto !important;
+    right: 10px !important;
+    transform: translateX(0) !important;
+    width: 90vw !important;
+    max-width: 300px;
+  }
+}
