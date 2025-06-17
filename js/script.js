@@ -1,4 +1,3 @@
-
 const platos = [
   { nombre: "Paella Valenciana", descripcion: "Arroz con mariscos, pollo y verduras.", imagen: "https://res.cloudinary.com/tienda-com/image/upload/f_auto/q_auto/c_fill,w_752/dpr_2.0/v1/recipes/mixed-seafood-paella", precio: 5000 },
   { nombre: "Tacos al Pastor", descripcion: "Tortillas con cerdo adobado y piña.", imagen: "https://img.freepik.com/free-photo/close-up-delicious-tacos_23-2150831025.jpg", precio: 3500 },
@@ -22,38 +21,92 @@ const platos = [
   { nombre: "Sopaipillas", descripcion: "Masa frita típica chilena.", imagen: "https://img.freepik.com/free-photo/flat-lay-delicious-food-assortment_23-2148708215.jpg", precio: 2000 }
 ];
 
+const bebestibles = [
+{ nombre: "Limonada Casera", descripcion: "Refrescante bebida de limón natural.", imagen: "https://img.freepik.com/free-photo/tasty-cold-fresh-drink-lemonade-with-lemon-mint-ice-lime-glass-wooden-table-closeup_1220-1340.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740", precio: 1400 },
+{ nombre: "Smoothie de Fresa", descripcion: "Batido cremoso de fresas frescas.", imagen: "https://img.freepik.com/free-photo/front-view-strawberry-milkshake-with-straw_23-2148707795.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740", precio: 1800 },
+{ nombre: "Agua Mineral", descripcion: "Agua con gas para hidratarte.", imagen: "https://img.freepik.com/free-photo/photorealistic-water-bottle_23-2151049033.jpg?ga=GA1.1.238327207.1749616152&semt=ais_hybrid&w=740", precio: 900 },
+{ nombre: "Chocolate Caliente", descripcion: "Bebida caliente y dulce de chocolate.", imagen: "https://img.freepik.com/free-photo/cup-hot-chocolate_1150-11525.jpg", precio: 1600 },
+{ nombre: "Té Chai", descripcion: "Mezcla especiada de té y leche.", imagen: "https://img.freepik.com/free-photo/chai-tea-cup-wooden-background_1150-11207.jpg", precio: 1500 },
+{ nombre: "Mate Tradicional", descripcion: "Bebida típica de Sudamérica.", imagen: "https://img.freepik.com/free-photo/mate-traditional-drink_1150-15933.jpg", precio: 1300 },
+{ nombre: "Batido de Mango", descripcion: "Delicioso batido tropical de mango.", imagen: "https://img.freepik.com/free-photo/mango-smoothie_1150-10932.jpg", precio: 1700 },
+{ nombre: "Agua de Coco", descripcion: "Natural y refrescante agua de coco.", imagen: "https://img.freepik.com/free-photo/coconut-water_1150-11188.jpg", precio: 1600 },
+{ nombre: "Té de Manzanilla", descripcion: "Infusión calmante y aromática.", imagen: "https://img.freepik.com/free-photo/chamomile-tea-cup_1150-11215.jpg", precio: 1000 },
+{ nombre: "Jugo de Naranja", descripcion: "Jugo fresco y cítrico de naranja.", imagen: "https://img.freepik.com/free-photo/orange-juice_1150-11036.jpg", precio: 1500 },
+{ nombre: "Café Latte", descripcion: "Café suave con leche espumosa.", imagen: "https://img.freepik.com/free-photo/latte-art-coffee_1150-15811.jpg", precio: 1700 },
+{ nombre: "Té de Menta", descripcion: "Infusión fresca y digestiva.", imagen: "https://img.freepik.com/free-photo/mint-tea_1150-11230.jpg", precio: 1000 },
+{ nombre: "Refresco de Manzana", descripcion: "Bebida dulce y refrescante.", imagen: "https://img.freepik.com/free-photo/apple-juice_1150-11205.jpg", precio: 1300 },
+{ nombre: "Café Americano", descripcion: "Café ligero y caliente.", imagen: "https://img.freepik.com/free-photo/americano-coffee_1150-11622.jpg", precio: 1200 },
+{ nombre: "Jugo de Piña", descripcion: "Jugo tropical de piña natural.", imagen: "https://img.freepik.com/free-photo/pineapple-juice_1150-11054.jpg", precio: 1500 },
+{ nombre: "Té de Hibisco", descripcion: "Infusión roja y refrescante.", imagen: "https://img.freepik.com/free-photo/hibiscus-tea_1150-11218.jpg", precio: 1100 },
+{ nombre: "Batido de Plátano", descripcion: "Batido cremoso de plátano y leche.", imagen: "https://img.freepik.com/free-photo/banana-smoothie_1150-10955.jpg", precio: 1700 },
+{ nombre: "Agua Saborizada", descripcion: "Agua con sabor a frutas naturales.", imagen: "https://img.freepik.com/free-photo/flavored-water_1150-11228.jpg", precio: 900 },
+{ nombre: "Café Mocha", descripcion: "Café con chocolate y leche.", imagen: "https://img.freepik.com/free-photo/mocha-coffee_1150-11618.jpg", precio: 1800 },
+{ nombre: "Té Negro", descripcion: "Té clásico con sabor intenso.", imagen: "https://img.freepik.com/free-photo/black-tea-cup_1150-11201.jpg", precio: 1000 },
 
-platos.forEach(plato => {
-  const col = document.createElement("div");
-  col.className = "col-md-4 mb-4";
-  col.innerHTML = `
-  <div class="card h-100 shadow-sm">
-    <img src="${plato.imagen}" class="card-img-top" alt="${plato.nombre}" style="height: 200px; object-fit: cover;">
-    <div class="card-body d-flex flex-column">
-      <h5 class="card-title">${plato.nombre}</h5>
-      <p class="card-text">${plato.descripcion}</p>
-      <p class="card-text fw-bold text-success">$${plato.precio.toLocaleString()}</p>
-      <button class="btn btn-success mt-auto" onclick="añadirAlCarrito('${plato.nombre}')">Añadir al carrito</button>
-    </div>
-  </div>
-`;
+];
 
-  menuContainer.appendChild(col);
-});
+const postres = [
+{ nombre: "Panqueques", descripcion: "Deliciosos panqueques con miel y frutas.", imagen: "https://img.freepik.com/free-photo/pancakes-with-berries_1150-27455.jpg", precio: 2100 },
+{ nombre: "Flan Casero", descripcion: "Postre suave de caramelo y huevo.", imagen: "https://img.freepik.com/free-photo/caramel-flan_1150-27766.jpg", precio: 2000 },
+{ nombre: "Mousse de Chocolate", descripcion: "Postre ligero y cremoso de chocolate.", imagen: "https://img.freepik.com/free-photo/chocolate-mousse-dessert_1150-27900.jpg", precio: 2300 },
+{ nombre: "Macarons", descripcion: "Dulces franceses de colores variados.", imagen: "https://img.freepik.com/free-photo/macaroons_1150-27421.jpg", precio: 1800 },
+{ nombre: "Crème Brûlée", descripcion: "Postre francés con costra caramelizada.", imagen: "https://img.freepik.com/free-photo/creme-brulee_1150-27301.jpg", precio: 2600 },
+{ nombre: "Cupcake", descripcion: "Pequeño pastel decorado y esponjoso.", imagen: "https://img.freepik.com/free-photo/cupcakes_1150-27292.jpg", precio: 1900 },
+{ nombre: "Churros con Chocolate", descripcion: "Frituras dulces con salsa de chocolate.", imagen: "https://img.freepik.com/free-photo/churros-chocolate_1150-27435.jpg", precio: 2100 },
+{ nombre: "Panna Cotta", descripcion: "Postre italiano cremoso con frutas.", imagen: "https://img.freepik.com/free-photo/panna-cotta_1150-27944.jpg", precio: 2400 },
+{ nombre: "Tarta de Manzana", descripcion: "Tarta casera con relleno de manzana.", imagen: "https://img.freepik.com/free-photo/apple-pie_1150-27888.jpg", precio: 2300 },
+{ nombre: "Galletas de Mantequilla", descripcion: "Galletas caseras con sabor tradicional.", imagen: "https://img.freepik.com/free-photo/butter-cookies_1150-27488.jpg", precio: 1700 },
+{ nombre: "Eclair de Chocolate", descripcion: "Pastelito relleno con crema y chocolate.", imagen: "https://img.freepik.com/free-photo/chocolate-eclair_1150-27345.jpg", precio: 2200 },
+{ nombre: "Brownie con Helado", descripcion: "Brownie tibio acompañado de helado.", imagen: "https://img.freepik.com/free-photo/brownie-ice-cream_1150-27190.jpg", precio: 2600 },
+{ nombre: "Trufas de Chocolate", descripcion: "Bocaditos de chocolate intensos.", imagen: "https://img.freepik.com/free-photo/chocolate-truffles_1150-27423.jpg", precio: 2000 },
+{ nombre: "Tarta Red Velvet", descripcion: "Tarta roja con crema de queso.", imagen: "https://img.freepik.com/free-photo/red-velvet-cake_1150-27299.jpg", precio: 2500 },
+{ nombre: "Muffins de Arándanos", descripcion: "Muffins suaves con frutas frescas.", imagen: "https://img.freepik.com/free-photo/blueberry-muffins_1150-27321.jpg", precio: 1900 },
+{ nombre: "Gelatina de Frutas", descripcion: "Postre fresco con trozos de frutas.", imagen: "https://img.freepik.com/free-photo/fruit-jelly_1150-27389.jpg", precio: 1500 },
 
- const dropdownLista = document.getElementById("dropdownLista");
+];
+
+// Función para renderizar cualquier sección
+function renderizarSeccion(productos, contenedorId) {
+  const contenedor = document.getElementById(contenedorId);
+  productos.forEach(plato => {
+    const col = document.createElement("div");
+    col.className = "col-md-4 mb-4";
+    col.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <img src="${plato.imagen}" class="card-img-top" alt="${plato.nombre}" style="height: 200px; object-fit: cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">${plato.nombre}</h5>
+          <p class="card-text">${plato.descripcion}</p>
+          <p class="card-text fw-bold text-success">$${plato.precio.toLocaleString()}</p>
+          <button class="btn btn-success mt-auto" onclick="añadirAlCarrito('${plato.nombre}')">Añadir al carrito</button>
+        </div>
+      </div>
+    `;
+    contenedor.appendChild(col);
+  });
+}
+
+// Inicializa secciones
+renderizarSeccion(platos, "menuContainer");
+renderizarSeccion(bebestibles, "bebestiblesContainer");
+renderizarSeccion(postres, "postresContainer");
+
+const dropdownLista = document.getElementById("dropdownLista");
 const contadorCarrito = document.getElementById("contadorCarrito");
 let carrito = [];
 
 function añadirAlCarrito(nombre) {
-  const plato = platos.find(p => p.nombre === nombre);
-  const existente = carrito.find(p => p.nombre === nombre);
+  const plato = platos.find(p => p.nombre === nombre)
+    || bebestibles.find(p => p.nombre === nombre)
+    || postres.find(p => p.nombre === nombre);
 
+  const existente = carrito.find(p => p.nombre === nombre);
   if (existente) {
     existente.cantidad += 1;
   } else {
     carrito.push({ ...plato, cantidad: 1 });
   }
+    mostrarPopup(`"${nombre}" añadido al carrito`);
 
   actualizarDropdown();
 }
@@ -67,10 +120,9 @@ function actualizarDropdown() {
     return;
   }
 
-    carrito.forEach(plato => {
+  carrito.forEach(plato => {
     const item = document.createElement("li");
     item.className = "dropdown-item d-flex justify-content-between align-items-center";
-
     item.innerHTML = `
       <div class="d-flex align-items-center gap-2 w-100 justify-content-between">
         <div class="d-flex align-items-center gap-2">
@@ -107,14 +159,12 @@ function actualizarDropdown() {
     dropdownLista.appendChild(item);
   });
 
-  // Mostrar total
   const total = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
   const totalItem = document.createElement("li");
   totalItem.className = "dropdown-item text-end fw-bold border-top pt-2";
   totalItem.textContent = `Total: $${total.toLocaleString()}`;
   dropdownLista.appendChild(totalItem);
 
-  // Botón realizar pedido
   const botonPedido = document.createElement("li");
   botonPedido.className = "dropdown-item text-center";
   botonPedido.innerHTML = `
@@ -122,23 +172,7 @@ function actualizarDropdown() {
   `;
   dropdownLista.appendChild(botonPedido);
 
-  // Actualiza contador
   contadorCarrito.textContent = carrito.reduce((total, p) => total + p.cantidad, 0);
-}
-
-
-function guardarCarrito() {
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-  const total = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
-  localStorage.setItem("totalCarrito", total);
-}
-
-
-function actualizarContador() {
-  contadorCarrito.textContent = carrito.length;
-  if (carrito.length === 0) {
-    dropdownLista.innerHTML = '<li class="text-muted">Tu carrito está vacío</li>';
-  }
 }
 
 function eliminarDelCarrito(nombre) {
@@ -146,7 +180,23 @@ function eliminarDelCarrito(nombre) {
   actualizarDropdown();
 }
 
+function guardarCarrito() {
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  const total = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
+  localStorage.setItem("totalCarrito", total);
+}
 
-  
-  
-  
+function mostrarPopup(mensaje) {
+  const contenedor = document.getElementById("popupNotificacion");
+  const alerta = document.createElement("div");
+
+  alerta.className = "popup-alerta";
+  alerta.textContent = mensaje;
+
+  contenedor.appendChild(alerta);
+
+  // Eliminar el popup después de 3 segundos
+  setTimeout(() => {
+    alerta.remove();
+  }, 3000);
+}
